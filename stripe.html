@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lorenz Plumbing Solutions — Sicklerville, NJ</title>
+  <meta name="description" content="Lorenz Plumbing Solutions. Residential, business, and commercial plumbing out of Sicklerville, NJ." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="design-switcher.css" />
+  <link rel="stylesheet" href="styles-stripe.css" />
+</head>
+<body data-design="stripe">
+  <div class="mesh-wrap" id="top">
+    <header class="stripe-nav">
+      <a class="stripe-logo" href="#top">Lorenz</a>
+      <nav class="stripe-nav-links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#service-area">Area</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="stripe-nav-right">
+        <a class="stripe-link" href="tel:+18565550199">(856) 555-0199</a>
+        <a class="btn-pill" href="#contact">Request service</a>
+      </div>
+      <button class="stripe-menu" id="navToggle" aria-label="Menu" aria-expanded="false">☰</button>
+    </header>
+
+    <section class="hero-mesh">
+      <span class="pill-tag">Sicklerville, New Jersey</span>
+      <h1 class="display-xxl">Plumbing infrastructure<br />for every property.</h1>
+      <p class="body-lg">Residential, business, and commercial plumbing. Minor repairs and installs — honest pricing, clean work, clear answers.</p>
+      <div class="cta-row">
+        <a class="btn-pill" href="#contact">Request service</a>
+        <a class="btn-secondary" href="#services">See services</a>
+      </div>
+    </section>
+  </div>
+
+  <main>
+    <section class="section section-soft" id="services">
+      <h2 class="display-lg">Services built for how you actually use water.</h2>
+      <p class="body-md muted">Three tracks. Same standard of work.</p>
+      <div class="card-grid">
+        <article class="card card-light">
+          <h3 class="heading-lg">Residential</h3>
+          <p class="body-md">Faucets, toilets, water heaters, leaks, drain clearing, and fixture installs for homes across the area.</p>
+          <a class="link-primary" href="#contact">Get a quote →</a>
+        </article>
+        <article class="card card-featured">
+          <span class="pill-tag pill-on-dark">Most requested</span>
+          <h3 class="heading-lg on-primary">Business</h3>
+          <p class="body-md on-primary-soft">Office and small-business plumbing — restroom upkeep, breakroom lines, and fast minor repairs that keep you open.</p>
+          <a class="link-on-dark" href="#contact">Get a quote →</a>
+        </article>
+        <article class="card card-light">
+          <h3 class="heading-lg">Commercial</h3>
+          <p class="body-md">Light commercial work — fixtures, supply lines, and maintenance scoped to keep your site running clean.</p>
+          <a class="link-primary" href="#contact">Get a quote →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-cream" id="about">
+      <div class="split">
+        <div>
+          <h2 class="display-md">Built on clean work and straight answers.</h2>
+        </div>
+        <div>
+          <p class="body-lg">Lorenz Plumbing Solutions is a local shop out of Sicklerville, NJ, focused on minor residential, business, and commercial jobs.</p>
+          <p class="body-md muted">No upsells, no mess left behind. Call, describe the problem, and get a clear plan before we start.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="service-area">
+      <h2 class="display-lg">Service area</h2>
+      <p class="body-md muted">South Jersey and surrounding towns.</p>
+      <div class="area-pills">
+        <span class="pill-tag">Sicklerville</span>
+        <span class="pill-tag">Williamstown</span>
+        <span class="pill-tag">Washington Twp</span>
+        <span class="pill-tag">Gloucester Co.</span>
+      </div>
+      <p class="body-md">Not sure if you're in range? <a class="link-primary" href="#contact">Ask us</a> — we cover Sicklerville and the surrounding area.</p>
+    </section>
+
+    <section class="section section-soft cta-band">
+      <h2 class="display-md">Got a leak, clog, or install?</h2>
+      <p class="body-md muted">Same-day callbacks when available. Clear pricing before we start.</p>
+      <a class="btn-pill" href="#contact">Get a quote</a>
+    </section>
+
+    <section class="section" id="contact">
+      <h2 class="display-lg">Request service</h2>
+      <p class="body-md muted">Tell us what's going on. We'll get back to you.</p>
+      <div class="contact-layout">
+        <form class="contact-form" id="contactForm" novalidate>
+          <label class="field">
+            <span class="caption">Name</span>
+            <input type="text" name="name" required autocomplete="name" />
+          </label>
+          <label class="field">
+            <span class="caption">Phone</span>
+            <input type="tel" name="phone" required autocomplete="tel" />
+          </label>
+          <label class="field">
+            <span class="caption">Email</span>
+            <input type="email" name="email" autocomplete="email" />
+          </label>
+          <label class="field">
+            <span class="caption">How can we help?</span>
+            <textarea name="message" rows="3" required></textarea>
+          </label>
+          <button class="btn-pill" type="submit">Send request</button>
+          <p class="form-status caption" id="formStatus" role="status"></p>
+        </form>
+        <aside class="contact-aside card card-light">
+          <div class="info-row">
+            <span class="caption">Phone</span>
+            <a class="body-tabular" href="tel:+18565550199">(856) 555-0199</a>
+          </div>
+          <div class="info-row">
+            <span class="caption">Email</span>
+            <a class="link-primary" href="mailto:info@lorenzplumbing.com">info@lorenzplumbing.com</a>
+          </div>
+          <div class="info-row">
+            <span class="caption">Based in</span>
+            <span class="body-md">Sicklerville, NJ</span>
+          </div>
+          <div class="info-row">
+            <span class="caption">Hours</span>
+            <span class="body-tabular">Mon–Sat · 7am–7pm</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="stripe-footer">
+    <div class="footer-cols">
+      <div>
+        <p class="caption-strong">Lorenz Plumbing Solutions</p>
+        <p class="micro">Residential · Business · Commercial</p>
+      </div>
+      <div>
+        <p class="caption-strong">Contact</p>
+        <p class="dense-link"><a href="tel:+18565550199">(856) 555-0199</a></p>
+        <p class="dense-link">Sicklerville, NJ</p>
+      </div>
+    </div>
+    <p class="micro legal">© <span id="year"></span> Lorenz Plumbing Solutions. Licensed &amp; insured.</p>
+  </footer>
+
+  <script src="script-stripe.js"></script>
+  <script src="design-switcher.js"></script>
+</body>
+</html>

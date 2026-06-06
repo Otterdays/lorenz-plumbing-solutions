@@ -17,8 +17,11 @@ lorenz-plumbing-solutions/
 ├── billboard.html          # Billboard design variant
 ├── styles-billboard.css    # Full-viewport signage layout
 ├── script-billboard.js     # Billboard interactions
+├── stripe.html             # Stripe design variant
+├── styles-stripe.css         # Gradient mesh + indigo system
+├── script-stripe.js          # Stripe interactions
 ├── design-switcher.css     # Shared theme cycle button
-├── design-switcher.js      # Cycles Bugatti → Apple → Billboard → …
+├── design-switcher.js      # Cycles Bugatti → Apple → Billboard → Stripe → …
 ├── bugatti/
 │   └── DESIGN.md           # Bugatti reference (not runtime)
 ├── DOCS/
@@ -34,10 +37,11 @@ lorenz-plumbing-solutions/
 | Bugatti (default) | `index.html` | `styles.css` | `script.js` | `bugatti/DESIGN.md` |
 | Apple | `apple.html` | `styles-apple.css` | `script-apple.js` | `DOCS/awesome-design-md/design-md/apple/DESIGN.md` |
 | Billboard | `billboard.html` | `styles-billboard.css` | `script-billboard.js` | — (original signage layout) |
+| Stripe | `stripe.html` | `styles-stripe.css` | `script-stripe.js` | `DOCS/awesome-design-md/design-md/stripe/DESIGN.md` |
 
 Future designs: add row to `DESIGNS` in `design-switcher.js` + new `{name}.html` trio. Theme button auto-injects on every page.
 
-**Cycle order:** Bugatti → Apple → Billboard → Bugatti
+**Cycle order:** Bugatti → Apple → Billboard → Stripe → Bugatti
 
 ## Page flow — Bugatti (`index.html`)
 

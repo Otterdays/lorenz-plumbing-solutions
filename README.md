@@ -25,8 +25,9 @@ Two separate pages — same content, different visual systems:
 | **Bugatti** (default) | `index.html` | Black austere luxury |
 | **Apple** | `apple.html` | Light/dark tiles, Action Blue |
 | **Billboard** | `billboard.html` | Full-screen landscape signage |
+| **Stripe** | `stripe.html` | Gradient mesh, indigo pills, fintech polish |
 
-Click the **floating theme button** (bottom-right) on any page to cycle: Bugatti → Apple → Billboard → …
+Click the **floating theme button** (bottom-right) on any page to cycle: Bugatti → Apple → Billboard → Stripe → …
 
 ## Project structure
 
@@ -40,6 +41,8 @@ Click the **floating theme button** (bottom-right) on any page to cycle: Bugatti
 | `script-apple.js` | Apple interactions |
 | `billboard.html` | Billboard design page |
 | `styles-billboard.css` | Full-viewport signage layout |
+| `stripe.html` | Stripe design page |
+| `styles-stripe.css` | Gradient mesh design system |
 | `design-switcher.js` | Shared theme cycle button |
 | `design-switcher.css` | Theme button styles |
 | `bugatti/` | Bugatti reference (`DESIGN.md`) |

@@ -9,6 +9,12 @@ All notable changes to this project. Format based on [Keep a Changelog](https://
 ### Added
 - _(nothing yet)_
 
+## [0.4.0] — 2026-06-06
+
+### Added
+- Stripe design variant: `stripe.html`, `styles-stripe.css`, `script-stripe.js` — gradient mesh hero, indigo pill CTAs, navy ink, featured dark service card
+- Stripe added to `design-switcher.js` cycle (4 designs)
+
 ## [0.3.0] — 2026-06-06
 
 ### Added

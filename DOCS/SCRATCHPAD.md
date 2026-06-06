@@ -16,7 +16,8 @@ _None._
 
 ## Last 5 actions
 
-1. **2026-06-06** — Shipped Billboard page + shared `design-switcher` cycle button on all pages
+1. **2026-06-06** — Shipped Stripe design (`stripe.html`) + wired into theme cycler (4 designs)
+2. **2026-06-06** — Shipped Billboard page + shared `design-switcher` cycle button on all pages
 2. **2026-06-06** — Shipped Apple design page (`apple.html`, `styles-apple.css`, `script-apple.js`) + design switcher on both pages
 2. **2026-06-06** — Created DOCS/ + README (project documentation pass)
 3. **2026-06-06** — Shipped `script.js` (nav drawer, form validate, mailto, year)

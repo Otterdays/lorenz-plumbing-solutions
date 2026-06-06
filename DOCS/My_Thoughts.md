@@ -26,3 +26,11 @@
 **Pattern for future:** `{name}.html` + `styles-{name}.css` + `script-{name}.js`. Cross-link in nav + footer.
 
 **Apple specifics:** Inter as SF Pro substitute, alternating light/parchment/dark tiles, Action Blue `#0066cc` pills, frosted sub-nav, 18px utility cards. Hero uses placeholder visual until photography added.
+
+## 2026-06-06 — Stripe as fourth variant
+
+**Choice:** Stripe from awesome-design-md — gradient mesh + single indigo CTA hierarchy.
+
+**Why:** Distinct from Bugatti (monochrome), Apple (product tiles), Billboard (signage). Stripe's fintech polish + atmospheric hero gives plumbing site unexpected premium trust signal. Business service card uses `card-pricing-featured` dark navy inversion per spec.
+
+**Substitutes:** Sohne → Inter weight 300, negative tracking on display. Mesh approximated via layered CSS radial gradients (spec notes real mesh is SVG/blob — good enough for static demo).

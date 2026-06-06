@@ -2,15 +2,16 @@
 
 # Lorenz Plumbing Solutions — Project Summary
 
-**Status:** Multi-design static site — 3 variants live (2026-06-06)  
+**Status:** Multi-design static site — 4 variants live (2026-06-06)  
 **Stack:** HTML / CSS / vanilla JS — no build step  
-**Designs:** Bugatti · Apple · Billboard (cycle via floating theme button)
+**Designs:** Bugatti · Apple · Billboard · Stripe (cycle via floating theme button)
 
 ## What exists
 
 - **Bugatti design** — `index.html` + `styles.css` + `script.js` (black austere luxury)
 - **Apple design** — `apple.html` + `styles-apple.css` + `script-apple.js` (light/dark tiles, Action Blue)
 - **Billboard design** — `billboard.html` + `styles-billboard.css` + `script-billboard.js` (full-viewport landscape signage)
+- **Stripe design** — `stripe.html` + `styles-stripe.css` + `script-stripe.js` (gradient mesh, indigo pills, thin Inter)
 - **Shared theme cycler** — `design-switcher.css` + `design-switcher.js` (fixed button on all pages)
 - Same content: hero, services, about, service area, CTA, contact, footer
 - Contact form with client-side validation + `mailto:` fallback on both pages

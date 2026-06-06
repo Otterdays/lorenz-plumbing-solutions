@@ -7,6 +7,7 @@
     { id: "bugatti", file: "index.html", label: "Bugatti" },
     { id: "apple", file: "apple.html", label: "Apple" },
     { id: "billboard", file: "billboard.html", label: "Billboard" },
+    { id: "stripe", file: "stripe.html", label: "Stripe" },
   ];
 
   function currentFile() {
