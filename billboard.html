@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lorenz Plumbing Solutions — Billboard</title>
+  <meta name="description" content="Lorenz Plumbing Solutions. Residential, business, and commercial plumbing. Sicklerville, NJ." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="design-switcher.css" />
+  <link rel="stylesheet" href="styles-billboard.css" />
+</head>
+<body data-design="billboard">
+  <div class="billboard" id="top">
+    <!-- TOP STRIP -->
+    <header class="bb-strip bb-strip-top">
+      <div class="bb-brand">LORENZ PLUMBING SOLUTIONS</div>
+      <div class="bb-strip-mid">RESIDENTIAL · BUSINESS · COMMERCIAL</div>
+      <a class="bb-call" href="tel:+18565550199">(856) 555-0199</a>
+    </header>
+
+    <!-- HERO BAND -->
+    <section class="bb-hero">
+      <div class="bb-hero-main">
+        <h1 class="bb-headline">PLUMBING<br />DONE RIGHT.</h1>
+        <p class="bb-sub">Minor repairs &amp; installs · Sicklerville, NJ &amp; South Jersey</p>
+      </div>
+      <div class="bb-hero-cta">
+        <a class="bb-btn" href="#contact">REQUEST SERVICE</a>
+        <span class="bb-hours">MON–SAT · 7AM–7PM</span>
+      </div>
+    </section>
+
+    <!-- SERVICES — edge to edge -->
+    <section class="bb-services" id="services">
+      <article class="bb-panel bb-panel-a">
+        <h2 class="bb-panel-title">RESIDENTIAL</h2>
+        <p class="bb-panel-copy">Faucets · toilets · water heaters · leaks · drains · fixture installs</p>
+      </article>
+      <article class="bb-panel bb-panel-b">
+        <h2 class="bb-panel-title">BUSINESS</h2>
+        <p class="bb-panel-copy">Restrooms · breakroom lines · fast minor repairs that keep you open</p>
+      </article>
+      <article class="bb-panel bb-panel-c">
+        <h2 class="bb-panel-title">COMMERCIAL</h2>
+        <p class="bb-panel-copy">Fixtures · supply lines · light commercial maintenance</p>
+      </article>
+    </section>
+
+    <!-- MID BAND -->
+    <section class="bb-mid">
+      <div class="bb-about" id="about">
+        <h2 class="bb-mid-title">ABOUT</h2>
+        <p class="bb-mid-copy">Local shop. Honest pricing. No upsells. No mess left behind. Call, describe the problem, get a clear plan.</p>
+      </div>
+      <div class="bb-area" id="service-area">
+        <h2 class="bb-mid-title">SERVICE AREA</h2>
+        <div class="bb-tags">
+          <span>SICKLERVILLE</span>
+          <span>WILLIAMSTOWN</span>
+          <span>WASHINGTON TWP</span>
+          <span>GLOUCESTER CO.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOTTOM — contact edge to edge -->
+    <footer class="bb-bottom" id="contact">
+      <form class="bb-form" id="contactForm" novalidate>
+        <span class="bb-form-label">REQUEST SERVICE</span>
+        <input type="text" name="name" placeholder="NAME" required autocomplete="name" />
+        <input type="tel" name="phone" placeholder="PHONE" required autocomplete="tel" />
+        <input type="email" name="email" placeholder="EMAIL" autocomplete="email" />
+        <input type="text" name="message" placeholder="HOW CAN WE HELP?" required />
+        <button class="bb-btn bb-btn-dark" type="submit">SEND</button>
+        <span class="bb-form-status" id="formStatus" role="status"></span>
+      </form>
+      <div class="bb-meta">
+        <a href="mailto:info@lorenzplumbing.com">info@lorenzplumbing.com</a>
+        <span>Sicklerville, NJ</span>
+        <span>© <span id="year"></span> Lorenz Plumbing · Licensed &amp; insured</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script-billboard.js"></script>
+  <script src="design-switcher.js"></script>
+</body>
+</html>

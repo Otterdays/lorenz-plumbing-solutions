@@ -264,7 +264,7 @@ a.info-line:hover { color: var(--link); }
   gap: var(--xl);
   text-align: center;
 }
-.footer-cols { display: flex; justify-content: space-between; gap: var(--xl); text-align: left; max-width: var(--maxw); margin: 0 auto; width: 100%; }
+.footer-cols { display: flex; justify-content: space-between; flex-wrap: wrap; gap: var(--xl); text-align: left; max-width: var(--maxw); margin: 0 auto; width: 100%; }
 .footer-cols .body-sm { color: var(--muted); }
 .footer-mark { font-size: 18px; letter-spacing: 8px; color: var(--ink); }
 .copyright { color: var(--muted-soft); }

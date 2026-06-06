@@ -16,14 +16,33 @@ npx serve .
 
 Then visit `http://localhost:8080`.
 
+## Designs
+
+Two separate pages — same content, different visual systems:
+
+| Design | Page | Open |
+|---|---|---|
+| **Bugatti** (default) | `index.html` | Black austere luxury |
+| **Apple** | `apple.html` | Light/dark tiles, Action Blue |
+| **Billboard** | `billboard.html` | Full-screen landscape signage |
+
+Click the **floating theme button** (bottom-right) on any page to cycle: Bugatti → Apple → Billboard → …
+
 ## Project structure
 
 | File / folder | Purpose |
 |---|---|
-| `index.html` | Single-page site markup |
-| `styles.css` | Bugatti-inspired austere design system |
-| `script.js` | Mobile nav, contact form, footer year |
-| `bugatti/` | Reference design system (`DESIGN.md`) |
+| `index.html` | Bugatti design page |
+| `styles.css` | Bugatti design system |
+| `script.js` | Bugatti interactions |
+| `apple.html` | Apple design page |
+| `styles-apple.css` | Apple design system |
+| `script-apple.js` | Apple interactions |
+| `billboard.html` | Billboard design page |
+| `styles-billboard.css` | Full-viewport signage layout |
+| `design-switcher.js` | Shared theme cycle button |
+| `design-switcher.css` | Theme button styles |
+| `bugatti/` | Bugatti reference (`DESIGN.md`) |
 | `DOCS/` | Project status, architecture, changelog |
 
 ## Before launch

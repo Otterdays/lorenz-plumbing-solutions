@@ -16,3 +16,13 @@
 **Font substitutes:** Bugatti proprietary fonts → Saira Condensed + Cormorant Garamond + JetBrains Mono. Trinity split preserved per design spec.
 
 **Wordmark:** Shortened to “LORENZ” (6px tracking) vs full business name in nav — full name stays in hero h1.
+
+## 2026-06-06 — Apple design as second variant
+
+**Choice:** Separate page (`apple.html`) instead of theme toggle on one page.
+
+**Why:** User wants many design explorations. Isolated HTML/CSS/JS per design keeps each system pure — no token collision between Bugatti black/white and Apple light/dark/blue.
+
+**Pattern for future:** `{name}.html` + `styles-{name}.css` + `script-{name}.js`. Cross-link in nav + footer.
+
+**Apple specifics:** Inter as SF Pro substitute, alternating light/parchment/dark tiles, Action Blue `#0066cc` pills, frosted sub-nav, 18px utility cards. Hero uses placeholder visual until photography added.

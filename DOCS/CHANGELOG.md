@@ -7,6 +7,28 @@ All notable changes to this project. Format based on [Keep a Changelog](https://
 ## [Unreleased]
 
 ### Added
+- _(nothing yet)_
+
+## [0.3.0] — 2026-06-06
+
+### Added
+- Billboard design: `billboard.html`, `styles-billboard.css`, `script-billboard.js` — full landscape viewport, edge-to-edge signage grid
+- Shared theme cycler: `design-switcher.css`, `design-switcher.js` — fixed floating button cycles all designs
+
+### Changed
+- Removed per-page design links from nav/footer; single cycle button on all pages
+
+## [0.2.0] — 2026-06-06
+
+### Added
+- Apple design variant: `apple.html`, `styles-apple.css`, `script-apple.js`
+- Design switcher on Bugatti page (nav + footer) linking to Apple design
+- Design switcher on Apple page (sub-nav + footer) linking back to Bugatti
+- Multi-design pattern for future variants (`{name}.html` + `styles-{name}.css` + `script-{name}.js`)
+
+## [0.1.1] — 2026-06-06
+
+### Added
 - Project documentation (`DOCS/`, root `README.md`)
 
 ## [0.1.0] — 2026-06-06

@@ -2,16 +2,18 @@
 
 # Lorenz Plumbing Solutions — Project Summary
 
-**Status:** Initial static site complete (2026-06-06)  
+**Status:** Multi-design static site — 3 variants live (2026-06-06)  
 **Stack:** HTML / CSS / vanilla JS — no build step  
-**Design:** Bugatti-inspired austere system (see `bugatti/DESIGN.md`)
+**Designs:** Bugatti · Apple · Billboard (cycle via floating theme button)
 
 ## What exists
 
-- Single-page marketing site (`index.html`)
-- Sections: hero, services, about, service area, CTA, contact, footer
-- Responsive layout with mobile nav drawer
-- Contact form with client-side validation + `mailto:` fallback
+- **Bugatti design** — `index.html` + `styles.css` + `script.js` (black austere luxury)
+- **Apple design** — `apple.html` + `styles-apple.css` + `script-apple.js` (light/dark tiles, Action Blue)
+- **Billboard design** — `billboard.html` + `styles-billboard.css` + `script-billboard.js` (full-viewport landscape signage)
+- **Shared theme cycler** — `design-switcher.css` + `design-switcher.js` (fixed button on all pages)
+- Same content: hero, services, about, service area, CTA, contact, footer
+- Contact form with client-side validation + `mailto:` fallback on both pages
 
 ## Quick links
 

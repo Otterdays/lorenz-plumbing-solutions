@@ -2,22 +2,44 @@
 
 # Architecture
 
-Static single-page site. No build pipeline, no framework, no server required for preview.
+Static multi-design site. No build pipeline, no framework, no server required for preview. Each design is a fully separate page with its own CSS/JS.
 
 ## File map
 
 ```
 lorenz-plumbing-solutions/
-├── index.html          # Page structure + content
-├── styles.css          # Design tokens + layout + components
-├── script.js           # Client interactions
+├── index.html              # Bugatti design (default)
+├── styles.css              # Bugatti tokens + layout
+├── script.js               # Bugatti interactions
+├── apple.html              # Apple design variant
+├── styles-apple.css        # Apple tokens + layout
+├── script-apple.js         # Apple interactions
+├── billboard.html          # Billboard design variant
+├── styles-billboard.css    # Full-viewport signage layout
+├── script-billboard.js     # Billboard interactions
+├── design-switcher.css     # Shared theme cycle button
+├── design-switcher.js      # Cycles Bugatti → Apple → Billboard → …
 ├── bugatti/
-│   └── DESIGN.md       # Reference design system (not loaded at runtime)
-├── DOCS/               # Project documentation
-└── README.md           # User-facing quick start
+│   └── DESIGN.md           # Bugatti reference (not runtime)
+├── DOCS/
+│   └── awesome-design-md/
+│       └── design-md/apple/DESIGN.md   # Apple reference
+└── README.md
 ```
 
-## Page flow
+## Multi-design pattern
+
+| Design | HTML | CSS | JS | Reference |
+|---|---|---|---|---|
+| Bugatti (default) | `index.html` | `styles.css` | `script.js` | `bugatti/DESIGN.md` |
+| Apple | `apple.html` | `styles-apple.css` | `script-apple.js` | `DOCS/awesome-design-md/design-md/apple/DESIGN.md` |
+| Billboard | `billboard.html` | `styles-billboard.css` | `script-billboard.js` | — (original signage layout) |
+
+Future designs: add row to `DESIGNS` in `design-switcher.js` + new `{name}.html` trio. Theme button auto-injects on every page.
+
+**Cycle order:** Bugatti → Apple → Billboard → Bugatti
+
+## Page flow — Bugatti (`index.html`)
 
 ```mermaid
 flowchart TD
@@ -28,6 +50,20 @@ flowchart TD
   E --> F[CTA band]
   F --> G[contact form + info]
   G --> H[footer]
+```
+
+## Page flow — Apple (`apple.html`)
+
+```mermaid
+flowchart TD
+  A[global-nav black] --> B[sub-nav frosted]
+  B --> C[hero light tile]
+  C --> D[services parchment + utility cards]
+  D --> E[about dark tile]
+  E --> F[service area light tile]
+  F --> G[CTA dark tile]
+  G --> H[contact parchment]
+  H --> I[footer parchment]
 ```
 
 ## Design token flow
