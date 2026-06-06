@@ -1,4 +1,5 @@
 // Shared design theme cycler — works on GitHub Pages project sites (/repo-name/)
+// Uses relative hrefs so links resolve under the repo subpath without a hardcoded base URL.
 
 (function () {
   "use strict";
@@ -9,22 +10,6 @@
     { id: "billboard", file: "billboard.html", label: "Billboard" },
     { id: "stripe", file: "stripe.html", label: "Stripe" },
   ];
-
-  /** Base path for project-site hosting, e.g. /lorenz-plumbing-solutions/ */
-  function getBasePath() {
-    var path = window.location.pathname;
-    var parts = path.split("/").filter(Boolean);
-
-    if (parts.length === 0) return "./";
-
-    var last = parts[parts.length - 1];
-    if (/\.html?$/i.test(last)) {
-      parts.pop();
-    }
-
-    if (parts.length === 0) return "./";
-    return "/" + parts.join("/") + "/";
-  }
 
   function currentFile() {
     var path = window.location.pathname;
@@ -46,8 +31,9 @@
     return 0;
   }
 
+  /** Relative URL — correct for file://, localhost, and username.github.io/repo-name/ */
   function designUrl(file) {
-    return getBasePath() + file;
+    return file;
   }
 
   function render(el, idx) {

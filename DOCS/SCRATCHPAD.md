@@ -12,11 +12,12 @@
 
 ## Blockers
 
-_None._
+- **GitHub Pages stale deploy** — live site still serves first-commit `index.html` only (`apple.html`, `design-switcher.js` → 404). Fix: push `.nojekyll` + enable Actions deploy (Settings → Pages → Source: GitHub Actions).
 
 ## Last 5 actions
 
-1. **2026-06-06** — Fixed theme cycler for GitHub Pages: static `<a>` in HTML, base-path-aware hrefs, top-right position
+1. **2026-06-06** — GHPages fix: added `.nojekyll` (skip Jekyll), Actions workflow, simplified design-switcher relative hrefs
+2. **2026-06-06** — Fixed theme cycler for GitHub Pages: static `<a>` in HTML, base-path-aware hrefs, top-right position
 2. **2026-06-06** — Shipped Stripe design (`stripe.html`) + wired into theme cycler (4 designs)
 2. **2026-06-06** — Shipped Billboard page + shared `design-switcher` cycle button on all pages
 2. **2026-06-06** — Shipped Apple design page (`apple.html`, `styles-apple.css`, `script-apple.js`) + design switcher on both pages
