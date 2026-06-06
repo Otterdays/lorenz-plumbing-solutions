@@ -9,6 +9,11 @@ All notable changes to this project. Format based on [Keep a Changelog](https://
 ### Added
 - _(nothing yet)_
 
+## [0.4.1] — 2026-06-06
+
+### Fixed
+- Theme cycler broken on GitHub Pages (`/lorenz-plumbing-solutions/` base path): static anchor in HTML, `getBasePath()` for hrefs, moved to top-right (was hidden behind Windows taskbar)
+
 ## [0.4.0] — 2026-06-06
 
 ### Added

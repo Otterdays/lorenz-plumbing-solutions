@@ -1,4 +1,4 @@
-// Shared design theme cycler — cycles Bugatti → Apple → Billboard → …
+// Shared design theme cycler — works on GitHub Pages project sites (/repo-name/)
 
 (function () {
   "use strict";
@@ -10,11 +10,32 @@
     { id: "stripe", file: "stripe.html", label: "Stripe" },
   ];
 
+  /** Base path for project-site hosting, e.g. /lorenz-plumbing-solutions/ */
+  function getBasePath() {
+    var path = window.location.pathname;
+    var parts = path.split("/").filter(Boolean);
+
+    if (parts.length === 0) return "./";
+
+    var last = parts[parts.length - 1];
+    if (/\.html?$/i.test(last)) {
+      parts.pop();
+    }
+
+    if (parts.length === 0) return "./";
+    return "/" + parts.join("/") + "/";
+  }
+
   function currentFile() {
     var path = window.location.pathname;
-    var file = path.split("/").pop() || "index.html";
-    if (!file || file === "/") file = "index.html";
-    return file;
+    var parts = path.split("/").filter(Boolean);
+    if (parts.length === 0) return "index.html";
+
+    var last = parts[parts.length - 1];
+    if (/\.html?$/i.test(last)) return last;
+
+    // /repo-name/ with no filename → index.html
+    return "index.html";
   }
 
   function currentIndex() {
@@ -25,29 +46,33 @@
     return 0;
   }
 
-  function mount() {
-    if (document.getElementById("designCycle")) return;
+  function designUrl(file) {
+    return getBasePath() + file;
+  }
 
-    var idx = currentIndex();
+  function render(el, idx) {
     var current = DESIGNS[idx];
     var next = DESIGNS[(idx + 1) % DESIGNS.length];
 
-    var btn = document.createElement("button");
-    btn.id = "designCycle";
-    btn.className = "design-cycle";
-    btn.type = "button";
-    btn.setAttribute("aria-label", "Switch theme to " + next.label);
-    btn.innerHTML =
+    el.href = designUrl(next.file);
+    el.setAttribute("aria-label", "Switch theme to " + next.label);
+    el.innerHTML =
       '<span class="design-cycle-label" aria-hidden="true">◐</span>' +
       '<span class="design-cycle-current">' + current.label + "</span>" +
       '<span class="design-cycle-next">Next: ' + next.label + "</span>" +
       '<span class="design-cycle-index">' + (idx + 1) + "/" + DESIGNS.length + "</span>";
+  }
 
-    btn.addEventListener("click", function () {
-      window.location.href = next.file;
-    });
+  function mount() {
+    var el = document.getElementById("designCycle");
+    if (!el) {
+      el = document.createElement("a");
+      el.id = "designCycle";
+      el.className = "design-cycle";
+      document.body.appendChild(el);
+    }
 
-    document.body.appendChild(btn);
+    render(el, currentIndex());
   }
 
   if (document.readyState === "loading") {
